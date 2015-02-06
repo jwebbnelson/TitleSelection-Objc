@@ -33,7 +33,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    TitleDetailViewController *detailViewController = [TitleDetailViewController new];
+   TitleDetailViewController *detailViewController = [TitleDetailViewController new];
     detailViewController.titleString = [self.dataSource titleAtIndexPath:indexPath];
     [self.navigationController pushViewController:detailViewController animated:YES];
 
